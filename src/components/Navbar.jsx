@@ -37,7 +37,7 @@ const Navbar = () => {
     setTimeout(() => {
       setShowToolTip(true);
       setTimeout(() => {
-        setShowToolTip(true);
+        setShowToolTip(false);
       }, 4000);
     }, 3000);
   }, []);
