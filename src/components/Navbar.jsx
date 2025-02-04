@@ -154,7 +154,7 @@ const Navbar = () => {
           {showToolTip && (
             <div className="w-52 text-center fixed lg:right-[150px] right-[35px] top-16 lg:top-20 bg-violet-700 px-2 py-1 rounded-md">
               <div className="absolute bottom-5 left-[160px] rotate-45 -z-50 bg-violet-700 w-5 h-5"></div>
-              <div className="text-white text-white">
+              <div className="text-white">
                 Brain Massage? Try out
               </div>
             </div>
