@@ -68,8 +68,8 @@ const Navbar = () => {
             to="/#home"
             className={`${
               location.hash === "#home"
-                ? "dark:bg-neutral-500 dark:bg-opacity-20 bg-neutral-300 px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "dark:hover:bg-neutral-500 hover:bg-neutral-300 dark:hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 dark:hover:backdrop-blur-[3px]"
+                ? "bg-neutral-500 bg-opacity-20  px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
+                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
             }`}
           >
             Home
@@ -79,8 +79,8 @@ const Navbar = () => {
             to="#about"
             className={`${
               location.hash === "#about"
-                ? "dark:bg-neutral-500 dark:bg-opacity-20 bg-neutral-300 px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "dark:hover:bg-neutral-500 hover:bg-neutral-300 dark:hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 dark:hover:backdrop-blur-[3px]"
+                ? "bg-neutral-500 bg-opacity-20  px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
+                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
             }`}
           >
             About
@@ -90,8 +90,8 @@ const Navbar = () => {
             to="#projects"
             className={`${
               location.hash === "#projects"
-                ? "dark:bg-neutral-500 dark:bg-opacity-20 bg-neutral-300 px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "dark:hover:bg-neutral-500 hover:bg-neutral-300 dark:hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 dark:hover:backdrop-blur-[3px]"
+                ? "bg-neutral-500 bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
+                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
             }`}
           >
             Projects
@@ -101,8 +101,8 @@ const Navbar = () => {
             to="#contact"
             className={`${
               location.hash === "#contact"
-                ? "dark:bg-neutral-500 dark:bg-opacity-20 bg-neutral-300 px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "dark:hover:bg-neutral-500 hover:bg-neutral-300 dark:hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 dark:hover:backdrop-blur-[3px]"
+                ? "bg-neutral-500 bg-opacity-20  px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
+                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
             }`}
           >
             Contact
@@ -154,7 +154,7 @@ const Navbar = () => {
           {showToolTip && (
             <div className="w-52 text-center fixed lg:right-[150px] right-[35px] top-16 lg:top-20 bg-violet-700 px-2 py-1 rounded-md">
               <div className="absolute bottom-5 left-[160px] rotate-45 -z-50 bg-violet-700 w-5 h-5"></div>
-              <div className="text-white dark:text-white">
+              <div className="text-white text-white">
                 Brain Massage? Try out
               </div>
             </div>

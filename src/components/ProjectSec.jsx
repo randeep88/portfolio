@@ -8,27 +8,19 @@ import { Link } from "react-router-dom";
 import link from "../assets/link.svg";
 import { Timeline } from "./Timeline";
 
-const ProjectSec = ({ setIsHovered, setBg }) => {
+const ProjectSec = () => {
   const data = [
     {
       title: "usePopcorn",
       content: (
-        <div
-          onMouseEnter={() => {
-            setIsHovered(true);
-          }}
-          onMouseLeave={() => {
-            setIsHovered(false);
-          }}
-          className="p-3 text-black dark:text-gray-300 rounded-lg selection:normal-case"
-        >
+        <div className="p-3 text-gray-300 rounded-lg selection:normal-case">
           <Link
             to="https://use-popcorn-iesp.vercel.app/"
             target="_blank"
-            className="flex items-center gap-2 text-black dark:text-white float-end mb-5"
+            className="flex items-center gap-2 text-white float-end mb-5"
           >
             Visit usePopcorn
-            <img className="w-5 dark:invert" src={link} />
+            <img className="w-5 invert" src={link} />
           </Link>
           <img className="rounded-lg my-5" src={s1} />
           <p>
@@ -45,24 +37,14 @@ const ProjectSec = ({ setIsHovered, setBg }) => {
     {
       title: "The React Quiz",
       content: (
-        <div
-          onMouseEnter={() => {
-            setIsHovered(true);
-            setBg("#61DBFB");
-          }}
-          onMouseLeave={() => {
-            setIsHovered(false);
-            setBg("#7C3AED");
-          }}
-          className="p-3 text-black dark:text-gray-300 rounded-lg selection:normal-case"
-        >
+        <div className="p-3 text-gray-300 rounded-lg selection:normal-case">
           <Link
             to="https://the-react-quiz-iota.vercel.app/"
             target="_blank"
-            className="flex items-center gap-2 text-black dark:text-white float-end mb-5"
+            className="flex items-center gap-2 text-white float-end mb-5"
           >
             Visit The React Quiz
-            <img className="w-5 dark:invert" src={link} />
+            <img className="w-5 invert" src={link} />
           </Link>
           <img className="rounded-lg my-5" src={s2} />
           <p>
@@ -79,24 +61,14 @@ const ProjectSec = ({ setIsHovered, setBg }) => {
     {
       title: "WorldWise",
       content: (
-        <div
-          onMouseEnter={() => {
-            setIsHovered(true);
-            setBg("yellow");
-          }}
-          onMouseLeave={() => {
-            setIsHovered(false);
-            setBg("#7C3AED");
-          }}
-          className="p-3 text-black dark:text-gray-300 rounded-lg selection:normal-case"
-        >
+        <div className="p-3 text-gray-300 rounded-lg selection:normal-case">
           <Link
             to="https://world-wise-e1iq.vercel.app/"
             target="_blank"
-            className="flex items-center gap-2 text-black dark:text-white float-end mb-5"
+            className="flex items-center gap-2 text-white float-end mb-5"
           >
             Visit WorldWise
-            <img className="w-5 dark:invert" src={link} />
+            <img className="w-5 invert" src={link} />
           </Link>
           <img className="rounded-lg my-5" src={s3} />
           <p>
@@ -112,24 +84,14 @@ const ProjectSec = ({ setIsHovered, setBg }) => {
     {
       title: "Weathery",
       content: (
-        <div
-          onMouseEnter={() => {
-            setIsHovered(true);
-            setBg("orange");
-          }}
-          onMouseLeave={() => {
-            setIsHovered(false);
-            setBg("#7C3AED");
-          }}
-          className="p-3 text-black dark:text-gray-300 rounded-lg selection:normal-case"
-        >
+        <div className="p-3 text-gray-300 rounded-lg selection:normal-case">
           <Link
             to="https://weather-app-nu-eight-73.vercel.app/"
             target="_blank"
-            className="flex items-center gap-2 text-black dark:text-white float-end mb-5"
+            className="flex items-center gap-2 text-white float-end mb-5"
           >
             Visit Weathery
-            <img className="w-5 dark:invert" src={link} />
+            <img className="w-5 invert" src={link} />
           </Link>
           <img className="rounded-lg my-5" src={s4} />
           <p>
@@ -146,7 +108,7 @@ const ProjectSec = ({ setIsHovered, setBg }) => {
 
   return (
     <div className="cursor-default pt-28" id="projects">
-      <h1 className="text-center selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text lg:text-6xl text-4xl md:text-5xl font-semibold text-transparent dark:from-white dark:to-slate-900/10">
+      <h1 className="text-center selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b bg-clip-text lg:text-6xl text-4xl md:text-5xl font-semibold text-transparent from-white to-slate-900/10">
         Projects
       </h1>
       <Timeline data={data} />

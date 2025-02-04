@@ -34,7 +34,7 @@ const Contact = () => {
       className="pt-28 md:pt-28 lg:pt-20 text-gray-300 flex flex-col items-center justify-center lg:flex lg:flex-row lg:items-center lg:justify-evenly w-full h-screen"
     >
       <div className="w-72 m-auto md:m-auto lg:m-0 lg:w-[450px]">
-        <h1 className="text-center lg:text-left md:text-5xl selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text lg:text-6xl text-4xl font-semibold text-transparent dark:from-white dark:to-slate-900/10">
+      <h1 className="text-center lg:text-left selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b bg-clip-text lg:text-6xl text-4xl md:text-5xl font-semibold text-transparent from-white to-slate-900/10">
           Contact
         </h1>
         <p className="pointer-events-none lg:text-5xl md:text-4xl text-3xl lg:text-left text-center lg:mt-5 mt-2 text-neutral-600  custom-font selection:normal-case">
@@ -45,7 +45,7 @@ const Contact = () => {
             <Link
               to="https://www.instagram.com/310_randeep_/"
               target="_blank"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="hover:text-white text-gray-400"
             >
               <svg
                 aria-hidden="true"
@@ -66,7 +66,7 @@ const Contact = () => {
             <Link
               to="https://github.com/randeep88"
               target="_blank"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="hover:text-whitetext-gray-400"
             >
               <svg
                 aria-hidden="true"
@@ -86,7 +86,7 @@ const Contact = () => {
             <Link
               to="https://www.linkedin.com/in/randeep-singh-9a6392259/"
               target="_blank"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+              className="hover:text-white text-gray-400"
             >
               <img
                 className="invert lg:w-9 lg:h-9 w-7 h-7 opacity-60 hover:opacity-100"
@@ -101,14 +101,14 @@ const Contact = () => {
           <form className="form" onSubmit={onSubmit}>
             <div className="mt-5">
               <label
-                className="block text-sm font-medium dark:text-gray-300 text-gray-700"
+                className="block text-sm font-medium text-gray-300 "
                 htmlFor="confirm-email"
               >
                 Full Name
               </label>
               <div className="mt-1">
                 <input
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
                   required
                   type="text"
                   name="name"
@@ -118,14 +118,14 @@ const Contact = () => {
             </div>
             <div className="mt-5">
               <label
-                className="block text-sm font-medium dark:text-gray-300 text-gray-700"
+                className="block text-sm font-medium text-gray-300 "
                 htmlFor="confirm-email"
               >
                 Email Address
               </label>
               <div className="mt-1">
                 <input
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
                   required
                   type="email"
                   name="email"
@@ -135,14 +135,14 @@ const Contact = () => {
             </div>
             <div className="mt-5">
               <label
-                className="block text-sm font-medium dark:text-gray-300 text-gray-700"
+                className="block text-sm font-medium text-gray-300 "
                 htmlFor="confirm-email"
               >
                 Message
               </label>
               <div className="mt-1">
                 <textarea
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
                   required
                   type="text"
                   name="message"

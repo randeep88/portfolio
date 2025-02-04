@@ -58,10 +58,10 @@ const AuroraHero = () => {
 
         <div id="hero-2">
           <div className="text-gray-300">
-            <h1 className="text-black dark:text-gray-300 lg:text-9xl md:text-8xl text-7xl custom-font selection:no-underline">
+            <h1 className="text-gray-300 lg:text-9xl md:text-8xl text-7xl custom-font selection:no-underline">
               Randeep
             </h1>
-            <h1 className="lg:ms-40 text-black dark:text-gray-300 lg:text-9xl md:text-8xl text-7xl custom-font mt-5 selection:no-underline">
+            <h1 className="lg:ms-40 text-gray-300 lg:text-9xl md:text-8xl text-7xl custom-font mt-5 selection:no-underline">
               Singh
             </h1>
           </div>
