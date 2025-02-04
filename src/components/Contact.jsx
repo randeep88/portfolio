@@ -31,16 +31,16 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="pt-24 text-gray-300 flex items-center justify-evenly w-full h-screen"
+      className="pt-28 md:pt-28 lg:pt-20 text-gray-300 flex flex-col items-center justify-center lg:flex lg:flex-row lg:items-center lg:justify-evenly w-full h-screen"
     >
-      <div className="w-[450px]">
-        <h1 className="selection:normal-case pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+      <div className="w-72 m-auto md:m-auto lg:m-0 lg:w-[450px]">
+        <h1 className="text-center lg:text-left md:text-5xl selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text lg:text-6xl text-4xl font-semibold text-transparent dark:from-white dark:to-slate-900/10">
           Contact
         </h1>
-        <p className="pointer-events-none text-5xl text-neutral-600 mt-5 custom-font selection:normal-case">
+        <p className="pointer-events-none lg:text-5xl md:text-4xl text-3xl lg:text-left text-center lg:mt-5 mt-2 text-neutral-600  custom-font selection:normal-case">
           Let’s create something amazing together! Drop me a message.
         </p>
-        <ul className="flex mt-14 space-x-5">
+        <ul className="flex items-center justify-center lg:justify-start lg:mt-14 mt-5 space-x-5 mb-10">
           <li>
             <Link
               to="https://www.instagram.com/310_randeep_/"
@@ -51,7 +51,7 @@ const Contact = () => {
                 aria-hidden="true"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-10 h-10"
+                className="lg:w-9 lg:h-9 w-7 h-7"
               >
                 <path
                   clipRule="evenodd"
@@ -72,7 +72,7 @@ const Contact = () => {
                 aria-hidden="true"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-10 h-10"
+                className="lg:w-9 lg:h-9 w-7 h-7"
               >
                 <path
                   clipRule="evenodd"
@@ -89,16 +89,15 @@ const Contact = () => {
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
             >
               <img
-                className="invert w-10 opacity-60 hover:opacity-100"
+                className="invert lg:w-9 lg:h-9 w-7 h-7 opacity-60 hover:opacity-100"
                 src={linkedin}
-                alt=""
               />
             </Link>
           </li>
         </ul>
       </div>
       <BackgroundGradient>
-        <div className="w-96 bg-black rounded-[16px] p-4 !pt-20 sm:p-6 selection:normal-case">
+        <div className="w-80 md:w-96 lg:w-96 bg-black rounded-[16px] p-4 lg:!pt-10 py-10 sm:p-6 selection:normal-case">
           <form className="form" onSubmit={onSubmit}>
             <div className="mt-5">
               <label

@@ -146,7 +146,7 @@ const ProjectSec = ({ setIsHovered, setBg }) => {
 
   return (
     <div className="cursor-default pt-28" id="projects">
-      <h1 className="-mb-20 z-50 selection:normal-case pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+      <h1 className="text-center selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text lg:text-6xl text-4xl md:text-5xl font-semibold text-transparent dark:from-white dark:to-slate-900/10">
         Projects
       </h1>
       <Timeline data={data} />

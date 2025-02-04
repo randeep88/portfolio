@@ -37,56 +37,33 @@ const AuroraHero = () => {
         backgroundImage,
       }}
       id="home"
-      className="z-10 cursor-default relative w-full grid min-h-screen place-content-center overflow-hidden bg-black px-4 py-24 text-gray-200"
+      className="w-full h-screen z-10 cursor-default relative grid min-h-screen place-content-center overflow-hidden bg-black px-4 py-24 text-gray-200"
     >
-      <div className="z-50 flex gap-48 items-center justify-center w-full selection:no-underline">
-        <div id="hero-1" className="w-[450px]">
-          <motion.p
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: -20, opacity: 1 }}
-            transition={transition}
-          >
-            <span className="text-3xl">
-              <ColourfulText text="Web Developer" className="text-3xl" />
+      <div className="z-50 md:mt-20 lg:flex lg:flex-row flex flex-col-reverse lg:gap-48 md:gap-20 gap-20 lg:text-left text-center md:text-center items-center justify-center w-full selection:no-underline">
+        <div id="hero-1" className="lg:w-[450px] md:w-96">
+          <p className="lg:mb-4 md:mb-3 mb-1">
+            <span className="lg:text-3xl md:text-3xl text-2xl">
+              <ColourfulText text="Web Developer" />
             </span>
-          </motion.p>
-          <motion.p
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={transition}
-            className="text-black text-4xl text-balance dark:text-gray-300 mb-6 "
-          >
+          </p>
+          <p className=" lg:text-4xl text-balance text-gray-300 mb-6 md:text-4xl text-3xl">
             Crafting Stunning Websites & Apps with MERN Stack Magic
-          </motion.p>
-          <motion.div
-            initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 10, x: 50, opacity: 1 }}
-            transition={transition}
-          >
+          </p>
+          <div className="text-center flex justify-center lg:justify-start">
             <Link className="cursor-pointer" smooth to="#about">
               <InteractiveHoverButton />
             </Link>
-          </motion.div>
+          </div>
         </div>
 
         <div id="hero-2">
           <div className="text-gray-300">
-            <motion.h1
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: -100, opacity: 1 }}
-              transition={transition}
-              className="text-black dark:text-gray-300 text-9xl custom-font selection:no-underline"
-            >
+            <h1 className="text-black dark:text-gray-300 lg:text-9xl md:text-8xl text-7xl custom-font selection:no-underline">
               Randeep
-            </motion.h1>
-            <motion.h1
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 100, opacity: 1 }}
-              transition={transition}
-              className="text-black dark:text-gray-300 text-9xl custom-font mt-5 selection:no-underline"
-            >
+            </h1>
+            <h1 className="lg:ms-40 text-black dark:text-gray-300 lg:text-9xl md:text-8xl text-7xl custom-font mt-5 selection:no-underline">
               Singh
-            </motion.h1>
+            </h1>
           </div>
         </div>
       </div>
