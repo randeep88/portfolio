@@ -23,7 +23,10 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full bg-white dark:bg-black md:px-10 selection:normal-case" ref={containerRef}>
+    <div
+      className="w-full bg-white dark:bg-transparent md:px-10 selection:normal-case"
+      ref={containerRef}
+    >
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div

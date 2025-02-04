@@ -4,7 +4,7 @@ import music from "../assets/music.mp3";
 import "../App.css/";
 import { motion } from "motion/react";
 import { useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/inverted-logo.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -39,16 +39,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center selection:no-underline">
+    <div className="z-[9999] w-full flex items-center justify-center selection:no-underline">
       <motion.div
         animate={{ y: 90 }}
         transition={transition}
         id="navbar"
-        className="w-[1500px] fixed -top-20 bg-neutral-300 bg-opacity-30 dark:text-white dark:bg-neutral-300 dark:bg-opacity-10 backdrop-blur-[5px] z-50 h-20 flex items-center justify-around rounded-3xl"
+        className="w-[1500px] fixed -top-20 bg-neutral-300 bg-opacity-30 dark:text-white dark:bg-neutral-300 dark:bg-opacity-10 backdrop-blur-lg z-50 h-20 flex items-center justify-around rounded-3xl"
       >
         <div>
           <Link smooth to="#home">
-            <img className="dark:invert w-10" src={logo} />
+            <img className="w-10" src={logo} />
           </Link>
         </div>
         <div className="flex gap-5 items-center justify-between h-10">
@@ -98,7 +98,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <audio ref={audioRef}>
+        <audio loop ref={audioRef}>
           <source src={music} type="audio/mp3" />
         </audio>
 

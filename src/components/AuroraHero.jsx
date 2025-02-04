@@ -31,15 +31,13 @@ const AuroraHero = () => {
     });
   }, []);
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
     <motion.section
       style={{
         backgroundImage,
       }}
       id="home"
-      className="relative w-full grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
+      className="z-10 cursor-default relative w-full grid min-h-screen place-content-center overflow-hidden bg-black px-4 py-24 text-gray-200"
     >
       <div className="z-50 flex gap-48 items-center justify-center w-full selection:no-underline">
         <div id="hero-1" className="w-[450px]">
@@ -65,7 +63,7 @@ const AuroraHero = () => {
             animate={{ y: 10, x: 50, opacity: 1 }}
             transition={transition}
           >
-            <Link className="z-50" smooth to="#about">
+            <Link className="cursor-pointer" smooth to="#about">
               <InteractiveHoverButton />
             </Link>
           </motion.div>
@@ -94,7 +92,7 @@ const AuroraHero = () => {
       </div>
       <div className="absolute inset-0 z-0">
         <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={2} />
+          <Stars radius={50} count={2100} factor={4} fade speed={2} />
         </Canvas>
       </div>
     </motion.section>

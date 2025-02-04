@@ -145,12 +145,11 @@ const ProjectSec = ({ setIsHovered, setBg }) => {
   ];
 
   return (
-    <div className="pt-28" id="projects">
-      <h1 className="selection:normal-case pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+    <div className="cursor-default pt-28" id="projects">
+      <h1 className="-mb-20 z-50 selection:normal-case pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Projects
       </h1>
       <Timeline data={data} />
-
     </div>
   );
 };
