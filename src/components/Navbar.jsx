@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { Links, useLocation } from "react-router-dom";
 import logo from "../assets/inverted-logo.png";
 import { div } from "framer-motion/client";
+import { Button } from "@mui/material";
 
 const Navbar = () => {
   const location = useLocation();
@@ -63,49 +64,66 @@ const Navbar = () => {
         </div>
 
         <div className="lg:flex md:flex gap-5 items-center justify-between h-10 hidden">
-          <Link
-            smooth
-            to="/#home"
-            className={`${
-              location.hash === "#home"
-                ? "bg-neutral-500 bg-opacity-20  px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
-            }`}
-          >
-            Home
+          <Link smooth to="/#home">
+            <Button
+              variant="text"
+              sx={{
+                borderRadius: "99999px",
+                color: location.hash === "#home" ? "white" : "white",
+                background:
+                  location.hash === "#home"
+                    ? "rgba(255,255,255,0.3)"
+                    : "transparent",
+              }}
+            >
+              Home
+            </Button>
           </Link>
-          <Link
-            smooth
-            to="#about"
-            className={`${
-              location.hash === "#about"
-                ? "bg-neutral-500 bg-opacity-20  px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
-            }`}
-          >
-            About
+
+          <Link smooth to="#about">
+            <Button
+              variant="text"
+              sx={{
+                borderRadius: "99999px",
+                color: location.hash === "#about" ? "white" : "white",
+                background:
+                  location.hash === "#about"
+                    ? "rgba(255,255,255,0.3)"
+                    : "transparent",
+              }}
+            >
+              About
+            </Button>
           </Link>
-          <Link
-            smooth
-            to="#projects"
-            className={`${
-              location.hash === "#projects"
-                ? "bg-neutral-500 bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
-            }`}
-          >
-            Projects
+          <Link smooth to="#projects">
+            <Button
+              variant="text"
+              sx={{
+                borderRadius: "99999px",
+                color: location.hash === "#projects" ? "white" : "white",
+                background:
+                  location.hash === "#projects"
+                    ? "rgba(255,255,255,0.3)"
+                    : "transparent",
+              }}
+            >
+              Projects
+            </Button>
           </Link>
-          <Link
-            smooth
-            to="#contact"
-            className={`${
-              location.hash === "#contact"
-                ? "bg-neutral-500 bg-opacity-20  px-3 py-2 rounded-3xl transition-all duration-150 backdrop-blur-[3px]"
-                : "hover:bg-neutral-500 hover:bg-opacity-20 px-3 py-2 rounded-3xl transition-all duration-150 hover:backdrop-blur-[3px]"
-            }`}
-          >
-            Contact
+          <Link smooth to="#contact">
+            <Button
+              variant="text"
+              sx={{
+                borderRadius: "99999px",
+                color: location.hash === "#contact" ? "white" : "white",
+                background:
+                  location.hash === "#contact"
+                    ? "rgba(255,255,255,0.3)"
+                    : "transparent",
+              }}
+            >
+              Contact
+            </Button>
           </Link>
         </div>
 
@@ -154,9 +172,7 @@ const Navbar = () => {
           {showToolTip && (
             <div className="w-52 text-center fixed lg:right-[150px] right-[35px] top-16 lg:top-20 bg-violet-700 px-2 py-1 rounded-md">
               <div className="absolute bottom-5 left-[160px] rotate-45 -z-50 bg-violet-700 w-5 h-5"></div>
-              <div className="text-white">
-                Brain Massage? Try out
-              </div>
+              <div className="text-white">Brain Massage? Try out</div>
             </div>
           )}
 

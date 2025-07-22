@@ -1,10 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import { BackgroundGradient } from "./BgGradient";
 import { Link } from "react-router-dom";
 import linkedin from "../assets/linkedin.svg";
+import { Button, TextField } from "@mui/material";
 
 const Contact = () => {
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -34,7 +35,7 @@ const Contact = () => {
       className="pt-28 md:pt-28 lg:pt-20 text-gray-300 flex flex-col items-center justify-center lg:flex lg:flex-row lg:items-center lg:justify-evenly w-full h-screen"
     >
       <div className="w-72 m-auto md:m-auto lg:m-0 lg:w-[450px]">
-      <h1 className="text-center lg:text-left selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b bg-clip-text lg:text-6xl text-4xl md:text-5xl font-semibold text-transparent from-white to-slate-900/10">
+        <h1 className="text-center lg:text-left selection:normal-case pointer-events-none lg:whitespace-pre-wrap bg-gradient-to-b bg-clip-text lg:text-6xl text-4xl md:text-5xl font-semibold text-transparent from-white to-slate-900/10">
           Contact
         </h1>
         <p className="pointer-events-none lg:text-5xl md:text-4xl text-3xl lg:text-left text-center lg:mt-5 mt-2 text-neutral-600  custom-font selection:normal-case">
@@ -66,7 +67,7 @@ const Contact = () => {
             <Link
               to="https://github.com/randeep88"
               target="_blank"
-              className="hover:text-whitetext-gray-400"
+              className="hover:text-white text-gray-400 transition-all"
             >
               <svg
                 aria-hidden="true"
@@ -86,7 +87,7 @@ const Contact = () => {
             <Link
               to="https://www.linkedin.com/in/randeep-singh-9a6392259/"
               target="_blank"
-              className="hover:text-white text-gray-400"
+              className="hover:text-white text-gray-400 transition-all"
             >
               <img
                 className="invert lg:w-9 lg:h-9 w-7 h-7 opacity-60 hover:opacity-100"
@@ -98,65 +99,109 @@ const Contact = () => {
       </div>
       <BackgroundGradient>
         <div className="w-80 md:w-96 lg:w-96 bg-black rounded-[16px] p-4 lg:!pt-10 py-10 sm:p-6 selection:normal-case">
-          <form className="form" onSubmit={onSubmit}>
-            <div className="mt-5">
-              <label
-                className="block text-sm font-medium text-gray-300 "
-                htmlFor="confirm-email"
-              >
-                Full Name
-              </label>
-              <div className="mt-1">
-                <input
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
-                  required
-                  type="text"
-                  name="name"
-                  placeholder="i.e., Randeep Singh"
-                />
-              </div>
-            </div>
-            <div className="mt-5">
-              <label
-                className="block text-sm font-medium text-gray-300 "
-                htmlFor="confirm-email"
-              >
-                Email Address
-              </label>
-              <div className="mt-1">
-                <input
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
-                  required
-                  type="email"
-                  name="email"
-                  placeholder="i.e., randeep@gmail.com"
-                />
-              </div>
-            </div>
-            <div className="mt-5">
-              <label
-                className="block text-sm font-medium text-gray-300 "
-                htmlFor="confirm-email"
-              >
-                Message
-              </label>
-              <div className="mt-1">
-                <textarea
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 bg-transparent rounded-md shadow-sm placeholder-neutral-600 focus:outline-none focus:ring-violet-600 focus:border-violet-500 sm:text-sm"
-                  required
-                  type="text"
-                  name="message"
-                  placeholder="i.e., Hello, I want to discuss about..."
-                />
-              </div>
-            </div>
+          <form className="form space-y-7" onSubmit={onSubmit}>
+            <TextField
+              size="small"
+              fullWidth
+              required
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#d1d5db",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#d1d5db",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#7c3aed",
+                  },
+                  "& .MuiOutlinedInput-input": {
+                    color: "#d1d5db",
+                  },
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#d1d5db",
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#d1d5db",
+                },
+              }}
+              id="outlined-basic"
+              name="name"
+              label="Full Name"
+              variant="outlined"
+            />
 
-            <button
+            <TextField
+              size="small"
+              fullWidth
+              required
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#d1d5db",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#d1d5db",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#7c3aed",
+                  },
+                  "& .MuiOutlinedInput-input": {
+                    color: "#d1d5db",
+                  },
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#d1d5db",
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#d1d5db",
+                },
+              }}
+              id="outlined-basic"
+              name="email"
+              label="Email Address"
+              variant="outlined"
+            />
+            <TextField
+              fullWidth
+              required
+              size="small"
+              id="outlined-multiline-static"
+              name="message"
+              label="Your Message"
+              multiline
+              rows={4}
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#d1d5db",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#d1d5db",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#7c3aed",
+                  },
+                  "& .MuiOutlinedInput-input": {
+                    color: "#d1d5db",
+                  },
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#d1d5db",
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#d1d5db",
+                },
+              }}
+            />
+
+            <Button
               type="submit"
-              className="mt-5 w-full bg-violet-600 hover:bg-violet-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors duration-300"
+              className="w-full bg-violet-600 hover:bg-violet-700 text-white text-sm font-medium py-2 px-4 transition-colors duration-300"
             >
               Send Message
-            </button>
+            </Button>
 
             {result && (
               <p className="mt-4 text-center text-sm text-violet-600">
