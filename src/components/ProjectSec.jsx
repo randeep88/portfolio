@@ -55,7 +55,6 @@ const ProjectSec = () => {
             details—all in one place. Designed for efficiency, it simplifies
             hotel operations with an intuitive and responsive interface.
           </p>
-          j
         </div>
       ),
     },
