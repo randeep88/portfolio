@@ -4,12 +4,61 @@ import s1 from "../assets/s1.png";
 import s2 from "../assets/s2.png";
 import s3 from "../assets/s3.png";
 import s4 from "../assets/s4.png";
+import s5 from "../assets/s5.png";
+import s6 from "../assets/s6.png";
 import { Link } from "react-router-dom";
 import link from "../assets/link.svg";
 import { Timeline } from "./Timeline";
 
 const ProjectSec = () => {
   const data = [
+    {
+      title: "Nebula",
+      content: (
+        <div className="p-3 text-gray-300 rounded-lg selection:normal-case">
+          <Link
+            to="https://nebula-frontend-one.vercel.app/"
+            target="_blank"
+            className="flex items-center gap-2 text-white float-end mb-5"
+          >
+            Visit Nebula
+            <img className="w-5 invert" src={link} />
+          </Link>
+          <img className="rounded-lg my-5" src={s5} />
+          <p>
+            Nebula is a modern music streaming platform where users can stream
+            and download high-quality songs. With real-time playback, curated
+            playlists, artist pages, and a sleek UI, Nebula offers a seamless
+            experience—anytime, anywhere. Enjoy smart controls, dynamic queues,
+            and smooth performance across devices.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "The Verdant Stay",
+      content: (
+        <div className="p-3 text-gray-300 rounded-lg selection:normal-case">
+          <Link
+            to="https://the-verdant-stay.vercel.app/"
+            target="_blank"
+            className="flex items-center gap-2 text-white float-end mb-5"
+          >
+            Visit The Verdant Stay
+            <img className="w-5 invert" src={link} />
+          </Link>
+          <img className="rounded-lg my-5" src={s6} />
+          <p>
+            The Verdant Stay is a hotel management system offering a seamless
+            dashboard to manage guest stays. Hotels can track check-in/out
+            times, manage bookings, add/remove cabins, and update user
+            details—all in one place. Designed for efficiency, it simplifies
+            hotel operations with an intuitive and responsive interface.
+          </p>
+          j
+        </div>
+      ),
+    },
     {
       title: "usePopcorn",
       content: (
@@ -99,7 +148,7 @@ const ProjectSec = () => {
             worldwide! Get accurate forecasts, live conditions, and essential
             weather details to plan your day effortlessly. Whether at home or
             traveling, access precise temperature, humidity, wind speed, and
-            more for a seamless weather experience anytime, anywhere
+            more for a seamless weather experience anytime, anywhere.
           </p>
         </div>
       ),
